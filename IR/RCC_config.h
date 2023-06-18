@@ -1,0 +1,21 @@
+#ifndef RCC_CONFIG_H
+#define RCC_CONFIG_H
+
+
+/*Options:
+			RCC_HSI
+			RCC_HSE_RC
+			RCC_HSE_CRYSTAL
+			RCC_PLL
+*/
+#define 	RCC_CLOCK_SOURCE	RCC_HSI
+
+
+/*Options:
+			RCC_PLL_IN_HSI_DIV_2
+			RCC_PLL_IN_HSE
+			RCC_PLL_IN_HSE_DIV_2
+*/
+#define 	RCC_PLL_INPUT		RCC_PLL_IN_HSI_DIV_2
+
+#endif
