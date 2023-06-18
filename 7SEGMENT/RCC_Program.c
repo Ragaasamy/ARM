@@ -1,9 +1,4 @@
-/***************************************************************************/
-/***************  Name    :   Gwaily          ******************************/
-/***************  Date    :   10/5/2023       ******************************/
-/**************   Version :   1.0V            ******************************/
-/**************   SWC     :   RCC             ******************************/
-/***************************************************************************/
+
 
 /*lib layer*/
 #include "BIT_MATH_H_.h"
@@ -91,16 +86,11 @@ u8 RCC_void_DisablePeripheralClock(u8 copy_u8Bus, u8 copy_u8_Peripheral_ID)
 void RCC_void_InitSysClock(void)
 {
 #if RCC_u8_CLC_TYPE==RCC_u8_HSI
-	   /*pre_scale to AHB*/
-		Set_Bit(RCC->CFGR,7);
-		Clr_Bit(RCC->CFGR,6);
-		Clr_Bit(RCC->CFGR,5);
-		Clr_Bit(RCC->CFGR,4);
-		/*enable HSI*/
-		Set_Bit(RCC->CR,0);
-		/*select HSI*/
-		Clr_Bit(RCC->CFGR,0);
-		Clr_Bit(RCC->CFGR,1);
+    /*enable HSI*/
+	Set_Bit(RCC->CR,0);
+	/*select HSI*/
+	Clr_Bit(RCC->CFGR,0);
+	Clr_Bit(RCC->CFGR,1);
 
 #elif RCC_u8_CLC_TYPE==RCC_u8_HSE_OSC
 	/*enable HSE*/
