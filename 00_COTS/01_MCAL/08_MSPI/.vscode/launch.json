@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/SEIF/IMT/Work/2023/ITI_MANSOURA_3MON_DIPLOMA/ARM/Mine/COTS/ARM-M4/00_COTS/01_MCAL/08_MSPI",
+      "program": "d:/SEIF/IMT/Work/2023/ITI_MANSOURA_3MON_DIPLOMA/ARM/Mine/COTS/ARM-M4/00_COTS/01_MCAL/08_MSPI/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
